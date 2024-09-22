@@ -10,14 +10,23 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212]">
     <NavBar />
-      <div className="container mx-auto mt-5 py-4 px-5 sm:px-12">
-        <HeroSection />
-        <AboutSection />
-        <ProjectSection />
-        <EmailSection />
-        <Footer />
+      <div>
+        <div className="container mx-auto mt-5 py-4 px-5 sm:px-12">
+          <HeroSection/>
+          <AboutSection/>
+          <ProjectSection/>
+        </div>
+
+        <section
+            className="bg-[url('/projects/back.png')] bg-cover bg-center"
+        >
+          <div className="container mx-auto mt-5 py-4 px-5 sm:px-12">
+            <EmailSection/>
+            <Footer/>
+          </div>
+        </section>
       </div>
-    <BottomNavBar />
+      <BottomNavBar/>
     </main>
   )
 }
