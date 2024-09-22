@@ -5,19 +5,37 @@ import TabButton from './TabButton';
 
 const tabData = [
     {
-        title: "Skills",
-        id: "skills",
+        title: " Frontend Skills",
+        id: "frontend-skills",
+        content: (
+            <ul className='list-disc pl-4'>
+                <li>Android</li>
+                <li>Kotlin</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Jetpack Compose</li>
+                <li>Compose Multiplatform</li>
+                <li>React</li>
+                <li>React Native</li>
+                <li>Tailwind Css</li>
+            </ul>
+        )
+    },
+    {
+        title: "Backend Skills",
+        id: "backend-skills",
         content: (
             <ul className='list-disc pl-4'>
                 <li>NodeJS</li>
                 <li>ExpressJS</li>
-                <li>SQL</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Kotlin</li>
-                <li>Jetpack Compose</li>
-                <li>Compose Multiplatform</li>
+                <li>NestJS</li>
+                <li>MongoDB</li>
+                <li>Firebase</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>SpringBoot</li>
+                <li>Hibernate</li>
             </ul>
         )
     },
@@ -42,7 +60,7 @@ const tabData = [
 ]
 
 const AboutSection = () => {
-    const [tab, setTab] = useState('skills');
+    const [tab, setTab] = useState('frontend-skills');
     const [isPending, startTransition] = useTransition();
 
     const handleTabChange = (id) => {
@@ -58,11 +76,15 @@ const AboutSection = () => {
                 <div className='mt-4 flex flex-col h-full'>
                     <h2 className='text-white mb-4 text-4xl lg:text-4xl font-bold text-center sm:text-start'>About Me</h2>
                     <p className='text-base md:text-lg'>
-                    I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS, and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and I am excited to work with others to create amazing applications.
+                    I am a BTech final year student with a passion for creating Software. I have experience working with Kotlin, Java, Jetpack Compose, Compose Multiplatform, React Native, NodeJS, Express JS, Databases and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and I am excited to work with others to create amazing applications.
                     </p>
                     <div className='flex flex-row mt-8'>
-                        <TabButton active={tab === 'skills'} selectTab={() => handleTabChange('skills')}>
-                            Skills
+                        <TabButton active={tab === 'frontend-skills'} selectTab={() => handleTabChange('frontend-skills')}>
+                            Frontend Skills
+                        </TabButton>
+
+                        <TabButton active={tab === 'backend-skills'} selectTab={() => handleTabChange('backend-skills')}>
+                            Backend Skills
                         </TabButton>
 
                         <TabButton active={tab === 'education'} selectTab={() => handleTabChange('education')}>
