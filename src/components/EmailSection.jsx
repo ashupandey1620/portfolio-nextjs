@@ -61,7 +61,7 @@ const EmailSection = () => {
 
                     <button
                         type="submit"
-                        className="bg-purple-500 hober:bg-purple-600 text-white font-medium py-2.5 px-5 rounded-lg w-full">Submit</button>
+                        className="bg-green-400 hover:bg-green-600 text-white font-medium py-2.5 px-5 rounded-lg w-full">Submit</button>
                 </form>
             </div>
         </section>        

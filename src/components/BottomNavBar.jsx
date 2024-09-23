@@ -16,7 +16,7 @@ const navLinks = [
         title: "Contact",
         path: "#contact",
         icon: <ChatBubbleLeftIcon className="h-6 w-6" />
-    }
+    },
 ]
 
 const BottomNavBar = () => {   
