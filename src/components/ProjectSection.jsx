@@ -8,7 +8,7 @@ const projectsData = [
       description: "A cloud storage app similar to Google Drive, featuring file upload, download, and local storage integration. It utilizes NestJS and Node.js for backend services, Kotlin Jetpack Compose for the Android interface, PostgreSQL for database management, and AWS S3 for secure file storage, all hosted on AWS EC2 for optimal performance and scalability.",
       image: "/projects/github.png",
       tag: ["All", "Full Stack","Android", "Cloud", "Nest","PostgreSQL"],
-      gitUrl: "/",
+      gitUrl: "www.github.com",
       previewUrl: "/",
     },
     {
@@ -77,6 +77,7 @@ const ProjectSection = () => {
                 {projectsData.map((project, index) => (
                     <ProjectCard
                         key={project.id}
+                        id={project.id}
                         imgUrl={project.image}
                         gitUrl={project.gitUrl}
                         previewUrl={project.previewUrl}

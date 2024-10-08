@@ -22,7 +22,7 @@ const EmailSection = () => {
 
                 <div className="socials flex flex-row gap-2">
                     <Link href={`${githubUrl}`} target={isMobile ? "" : "_blank"}>
-                        <Image src={GithubIcon} alt="Github Icon" />
+                        <Image src={GithubIcon} alt="Github Icon"  />
                     </Link>
                     <Link href={`${linkedinUrl}`} target={isMobile ? "" : "_blank"}>
                         <Image src={LinkedinIcon} alt="Linkedin Icon" />
