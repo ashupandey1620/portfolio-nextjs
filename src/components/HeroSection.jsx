@@ -6,13 +6,11 @@ import Link from "next/link";
 
 
 const HeroSection = () => {
-    const fileId = "1UXgtIstYuOY3gBRS5MiM5f9MBWB2EWfk";
+    const fileId = "1toAND91tGSHV1zq3iSl2Jvv8B0ftZUAI";
     const handleDownload = () => {
         const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
         window.location.href = downloadUrl;
       };
-
-
 
     return(
         <section className="sm:mt-20">
@@ -24,7 +22,7 @@ const HeroSection = () => {
                 <TypeAnimation
                     sequence={[
                         'Ashutosh Pandey',
-                        1000, 
+                        1000,
                         'Software Developer',
                         1000,
                         'Android Hustler',
@@ -54,16 +52,16 @@ const HeroSection = () => {
             <div className="col-span-5 place-self-center mt-4 lg:mt-0">
                 <div className="rounded-full bg-[#181818] w-[380px] h-[380px] lg:w-[420px] lg:h-[420px] relative">
                     <Image
-                        src="/hero-image.png"
+                        src="/linkedinCover.jpg"
                         className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full"
                         alt="hero image"
                         width={380}
                         height={380}
                     />
 
-                </div>     
+                </div>
             </div>
-            </div> 
+            </div>
         </section>
     )
 }

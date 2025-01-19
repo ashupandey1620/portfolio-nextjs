@@ -42,32 +42,32 @@ const projectsData = [
       id: 5,
       title: "Behance",
       description: "A Behance clone website featuring a modern and responsive design, built with React for the frontend and styled using Tailwind CSS. The backend is powered by Node.js and Express.js, providing a robust API for user authentication, project uploads, and interaction functionalities, creating an engaging platform for creatives to showcase their work.",
-        image: "/projects/github.png",
+        image: "/img.png",
       tag: ["All", "Web","React", "Tailwind CSS", "NodeJS + ExpressJS","MongoDB"],
       gitUrl: "/",
       previewUrl: "/",
     },
+    // {
+    //   id: 6,
+    //   title: "Farragut",
+    //   description: "Farragut is a full-stack web application designed to manage a database of employees, developed using Next.js and Supabase. It streamlines task assignments and wage tracking to enhance productivity. The application features a responsive design with Tailwind CSS and incorporates data visualization tools like Chart.js to provide valuable insights into employee performance and task completion.",
+    //     image: "/projects/github.png",
+    //   tag: ["All", "Web","Full Stack","Firebase","Management Workflow"],
+    //   gitUrl: "/",
+    //   previewUrl: "/",
+    // },
     {
-      id: 6,
-      title: "Farragut",
-      description: "Farragut is a full-stack web application designed to manage a database of employees, developed using Next.js and Supabase. It streamlines task assignments and wage tracking to enhance productivity. The application features a responsive design with Tailwind CSS and incorporates data visualization tools like Chart.js to provide valuable insights into employee performance and task completion.",
-        image: "/projects/github.png",
-      tag: ["All", "Web","Full Stack","Firebase","Management Workflow"],
-      gitUrl: "/",
-      previewUrl: "/",
-    },
-    {
-        id: 7,
+        id: 6,
         title: "Stocks Application",
-        description: "",
-        image: "/projects/github.png",
+        description: "A Stocks Tracker App built with Jetpack Compose** and Kotlin, leveraging the Stock Free API to provide real-time stock market updates. This app offers a sleek and modern UI, enabling users to track stock prices, view detailed stock information, and monitor market trends. Designed for efficiency, the app ensures smooth navigation, real-time data syncing, and offline access to favorite stocks. It’s a reliable tool for both casual users and active investors to stay informed on the go.",
+        image: "/projects/img.png",
         tag: ["All", "Android","Stocks API","Android","Kotlin","Jetpack Compose"],
         gitUrl: "/",
         previewUrl: "/",
     },
   ];
 
-  
+
 const ProjectSection = () => {
     return (
         <div id="projects">
@@ -85,7 +85,7 @@ const ProjectSection = () => {
                         description={project.description}
                     />
                 ))}
-            </div> 
+            </div>
         </div>
     );
 }
