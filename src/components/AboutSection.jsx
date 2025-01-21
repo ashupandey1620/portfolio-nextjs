@@ -5,6 +5,16 @@ import TabButton from './TabButton';
 
 const tabData = [
     {
+        title: " Experience",
+        id: "experience",
+        content: (
+            <ul className='list-disc pl-4'>
+                <li>Android Developer intern at Sense Original pvt ltd</li>
+                <li>Data Science Intern at Harman International</li>
+            </ul>
+        )
+    },
+    {
         title: " Frontend Skills",
         id: "frontend-skills",
         content: (
@@ -60,7 +70,7 @@ const tabData = [
 ]
 
 const AboutSection = () => {
-    const [tab, setTab] = useState('frontend-skills');
+    const [tab, setTab] = useState('experience');
     const [isPending, startTransition] = useTransition();
 
     const handleTabChange = (id) => {
@@ -95,6 +105,12 @@ const AboutSection = () => {
                         set. I am a team player and I am excited to work with others to create amazing applications.
                     </p>
                     <div className='flex flex-row mt-8'>
+
+                        <TabButton active={tab === 'experience'}
+                                   selectTab={() => handleTabChange('experience')}>
+                            Experience
+                        </TabButton>
+
                         <TabButton active={tab === 'frontend-skills'}
                                    selectTab={() => handleTabChange('frontend-skills')}>
                             Frontend Skills
