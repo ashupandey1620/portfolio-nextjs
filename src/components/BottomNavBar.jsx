@@ -12,11 +12,6 @@ const navLinks = [
         path: "#projects",
         icon: <CodeBracketIcon className="h-6 w-6" />
     },
-    {
-        title: "Contact",
-        path: "#contact",
-        icon: <ChatBubbleLeftIcon className="h-6 w-6" />
-    },
 ]
 
 const BottomNavBar = () => {   

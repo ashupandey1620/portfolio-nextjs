@@ -6,8 +6,8 @@ import Image from "next/image";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Ashutosh Pandey | Portfolio',
-  description: 'Designed by Ashutos',
+  title: 'Ashutosh | Portfolio',
+  description: 'Designed by Ashutosh',
 }
 
 export default function RootLayout({ children }) {

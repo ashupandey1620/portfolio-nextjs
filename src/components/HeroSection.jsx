@@ -1,8 +1,12 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+import { isMobile } from 'react-device-detect';
 import { TypeAnimation } from 'react-type-animation';
 import Link from "next/link";
+import GithubIcon from "../../public/github-icon.svg";
+import LinkedinIcon from "../../public/linkedin-icon.svg";
+import WhatsappIcon from "../../public/whatsapp-icon.png";
+import Image from "next/image";
 
 
 const HeroSection = () => {
@@ -11,23 +15,26 @@ const HeroSection = () => {
         const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
         window.location.href = downloadUrl;
       };
+    const githubUrl = "https://github.com/ashupandey1620";
+    const linkedinUrl = "https://www.linkedin.com/in/ashupandey1620/";
+    const whatsappUrl = "https://wa.me/6386415832";
 
     return(
         <section className="sm:mt-20">
             <div className="grid grid-cols-1 sm:grid-cols-12">
             <div className="col-span-7 place-self-center text-center sm:text-left">
                 <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">Namaste, I&apos;m{" "}</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">Hey, I&apos;m{" "}</span>
                 <br></br>
                 <TypeAnimation
                     sequence={[
-                        'Ashutosh Pandey',
+                        'Ashutosh',
                         3000,
-                        'Software Engineer',
+                        'AI Engineer',
                         1000,
-                        'Generative AI Hustler',
+                        'Software Developer',
                         1000,
-                        'Backend and Mobile App Dev',
+                        'Mobile App Dev',
                         1000
                     ]}
                     wrapper="span"
@@ -36,19 +43,36 @@ const HeroSection = () => {
                     />
                 </h1>
                     <p className="text-[#ADB7BE] text-md mb-6 md:text-lg">
-                    Passionate Software Developer, creating engaging solutions. Proficient in various technologies, dedicated to crafting innovative experiences that leave a lasting impact.
+                    I am an AI and Machine Learning professional passionate about developing AI Agents and agentic systems that automate reasoning, decision-making, and analytics at scale. Evolving from mobile app development, I now focus on building multimodal AI, Generative AI applications, and cloud-based intelligent platforms, creating impactful solutions that solve real-world challenges.
                     </p>
                     <div>
                         <Link href="#contact">
                             <button className="px-6 py-3 rounded-full mr-4 w-full sm:w-fit bg-white hover:bg-slate-200 text-white bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500">Contact Me</button>
                         </Link>
+
                         <button className="px-1 py-1 rounded-full mt-4 w-full sm:w-fit hover:bg-slate-800 text-white border bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500" onClick={handleDownload}>
                         <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                         Download CV
                         </span>
                         </button>
+                    
+
+                        <div className="socials flex flex-row gap-2 px-1 py-1 rounded-full mt-4 w-full sm:w-fit hover:bg-slate-800 text-white border bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+                        <Link href={`${githubUrl}`} target={isMobile ? "" : "_blank"}>
+                            <Image src={GithubIcon} alt="Github Icon"  />
+                        </Link>
+                        <Link href={`${linkedinUrl}`} target={isMobile ? "" : "_blank"}>
+                            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+                        </Link>
+                        <Link href={`${whatsappUrl}`} target={isMobile ? "" : "_blank"} className="flex items-center px-2">
+                            <Image src={WhatsappIcon} alt="Linkedin Icon" className="h-10 w-10" />
+                        </Link>
+                        </div>
                     </div>
             </div>
+
+             
+
             <div className="col-span-5 place-self-center mt-4 lg:mt-0">
                 <div className="rounded-full bg-[#181818] w-[380px] h-[380px] lg:w-[420px] lg:h-[420px] relative">
                     <Image

@@ -9,8 +9,9 @@ const tabData = [
         id: "experience",
         content: (
             <ul className='list-disc pl-4'>
-                <li>Android Developer intern at Sense Original pvt ltd</li>
-                <li>Data Science Intern at Harman International</li>
+                <li>Associate AI Engineer at HARMAN</li>
+                <li>AI and Data Intern at HARMAN</li>
+                <li>Android Developer intern at Sense Original Technologies</li>
             </ul>
         )
     },
@@ -54,7 +55,9 @@ const tabData = [
         id: "education",
         content: (
             <ul>
-                <li>Pranveer Singh Institute of Technology</li>
+                <li>B.Tech - Pranveer Singh Institute of Technology</li>
+                <li>Intermediate - ISC Board</li>
+                <li>High School - ICSE Board</li>
             </ul>
         )
     },
@@ -99,11 +102,8 @@ const AboutSection = () => {
                     <h2 className='text-white mb-4 text-4xl lg:text-4xl font-bold text-center sm:text-start'>About
                         Me</h2>
                     <p className='text-base md:text-lg'>
-                        I am a BTech final year student with a passion for creating Software. I have experience working
-                        with Kotlin, Java, Jetpack Compose, Compose Multiplatform, React Native, NodeJS, Express JS,
-                        Databases and Git. I am a quick learner and I am always looking to expand my knowledge and skill
-                        set. I am a team player and I am excited to work with others to create amazing applications.
-                    </p>
+                        
+                    </p>I am an Associate Software Engineer (Data Science) at HARMAN, where I focus on developing AI agents, multimodal systems, and advanced analytics solutions. Previously, as an AI Intern at HARMAN, I worked on Generative AI and intelligent automation, and as an SDE Intern at Sense Original Technologies, I contributed to backend development and Android applications. My expertise spans AI/ML, Generative AI, cloud platforms, and full-stack development, with a strong passion for creating scalable and impactful software solutions.
                     <div className='flex flex-row mt-8'>
 
                         <TabButton active={tab === 'experience'}

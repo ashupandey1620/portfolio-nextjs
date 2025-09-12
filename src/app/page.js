@@ -21,7 +21,7 @@ export default function Home() {
             className="bg-[url('/projects/back.png')] bg-cover bg-center"
         >
           <div className="container mx-auto mt-5 py-4 px-5 sm:px-12">
-            <EmailSection/>
+            {/* <EmailSection/> */}
             <Footer/>
           </div>
         </section>
