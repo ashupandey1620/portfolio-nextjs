@@ -45,9 +45,9 @@ const HeroSection = () => {
                     <p className="text-[#ADB7BE] text-md mb-6 md:text-lg">
                     I am an AI and Machine Learning professional passionate about developing AI Agents and agentic systems that automate reasoning, decision-making, and analytics at scale. Evolving from mobile app development, I now focus on building multimodal AI, Generative AI applications, and cloud-based intelligent platforms, creating impactful solutions that solve real-world challenges.
                     </p>
-                    <div>
-                        <Link href="#contact">
-                            <button className="px-6 py-3 rounded-full mr-4 w-full sm:w-fit bg-white hover:bg-slate-200 text-white bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500">Contact Me</button>
+                    <div className="flex flex-wrap items-center gap-4">
+                        <Link href="https://medium.com/@ashupandey1620" target="_blank" rel="noopener noreferrer">
+                            <button className="px-6 py-3 rounded-full mt-4 w-full sm:w-fit bg-white hover:bg-slate-200 text-white bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500">Tech Blogs</button>
                         </Link>
 
                         <button className="px-1 py-1 rounded-full mt-4 w-full sm:w-fit hover:bg-slate-800 text-white border bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500" onClick={handleDownload}>
